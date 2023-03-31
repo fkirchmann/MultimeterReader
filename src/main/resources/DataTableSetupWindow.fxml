@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="82.0" prefWidth="317.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.mtreader.DataTableSetupWindow">
+  <children>
+    <Label id="label1" text="X-Axis (optional):" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="9.0" />
+    <ChoiceBox id="choiceBox1" fx:id="xDevice" prefHeight="18.0" prefWidth="120.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="7.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <ChoiceBox id="choiceBox2" fx:id="xUnit" prefHeight="18.0" prefWidth="85.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="7.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <Label id="label1" text="Y-Axis:" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="32.0" />
+    <ChoiceBox id="choiceBox1" fx:id="yDevice" prefHeight="18.0" prefWidth="120.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="30.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <ChoiceBox id="choiceBox2" fx:id="yUnit" prefHeight="18.0" prefWidth="85.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="31.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <Button id="button1" defaultButton="true" onAction="#onOK" prefHeight="18.0" prefWidth="60.0" text="OK" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="10.0" />
+    <Button id="button2" cancelButton="true" onAction="#onCancel" text="Cancel" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="77.0" />
+  </children>
+</AnchorPane>

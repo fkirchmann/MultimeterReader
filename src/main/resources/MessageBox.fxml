@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="160.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.mtreader.MessageBox">
+  <children>
+    <Label id="label1" fx:id="message" alignment="TOP_LEFT" text="No message text set." wrapText="true" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="3.0" />
+    <ToolBar id="toolBar1" prefWidth="161.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <items>
+        <Button id="button1" onAction="#onOK" text="OK" />
+      </items>
+    </ToolBar>
+  </children>
+</AnchorPane>

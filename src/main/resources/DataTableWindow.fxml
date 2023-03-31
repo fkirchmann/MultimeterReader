@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="162.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.mtreader.DataTableWindow">
+  <children>
+    <Button id="button2" fx:id="menuButton" alignment="CENTER_RIGHT" minWidth="23.0" onAction="#onMenu" onMouseClicked="#onMenu" prefHeight="26.0" prefWidth="47.0" text="▼" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <contextMenu>
+        <ContextMenu id="contextMenu1" style="" fx:id="menu">
+          <items>
+            <MenuItem id="menuItem1" text="X: No device" fx:id="deviceX" />
+            <MenuItem id="menuItem2" text="Y: No device" fx:id="deviceY" />
+            <SeparatorMenuItem style="" />
+            <MenuItem id="menuItem3" onAction="#onCSVExport" style="" text="Export as CSV" />
+            <MenuItem id="menuItem4" onAction="#onPreviewGraph" style="" text="Show preview graph" />
+          </items>
+        </ContextMenu>
+      </contextMenu>
+    </Button>
+    <Button id="button1" defaultButton="true" onAction="#onMeasure" prefHeight="26.0" prefWidth="155.0" text="Measure" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="0.0">
+      <font>
+        <Font size="13.0" />
+      </font>
+    </Button>
+    <TableView id="tableView1" fx:id="table" editable="true" prefHeight="200.0" prefWidth="178.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+      <columns>
+        <TableColumn minWidth="50.0" text="X" fx:id="columnX" />
+        <TableColumn text="Y" fx:id="columnY" />
+      </columns>
+      <contextMenu>
+        <ContextMenu id="contextMenu2">
+          <items>
+            <MenuItem id="menuItem5" onAction="#onDataPointDelete" text="Delete selected data point" />
+          </items>
+        </ContextMenu>
+      </contextMenu>
+    </TableView>
+  </children>
+</AnchorPane>

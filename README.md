@@ -11,7 +11,7 @@ Displays and records live data from your multimeter & exports it as CSV. Works w
 
 I originally wrote this in 2012 for a school project and then ported it to Maven in 2023 - 11 years later.
 
-To implement support for other multimeters, extend the [DataSource](src/main/java/com/mtreader/api/DataSource) class and (optionally) take a look at [VoltcraftVC840](src/main/java/com/mtreader/api/impl/VoltcraftVC840.java) as an example.
+To implement support for other multimeters, extend the [DataSource](src/main/java/com/mtreader/api/DataSource.java) class and (optionally) take a look at [VoltcraftVC840](src/main/java/com/mtreader/api/impl/VoltcraftVC840.java) as an example.
 
 ## Running the Application
 Tested on Windows 10, but should work on Linux and x64 macOS as well. 
